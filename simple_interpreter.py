@@ -449,7 +449,7 @@ funRegex = startParentheses + r"\bfun\b" +\
     anyWhiteSpaces + r"\(" + anyWhiteSpaces + r"([^\s]+)" + anyWhiteSpaces + r"\)" +\
     anyWhiteSpaces + anyItem + endParentheses
 # appRegex = op_regex(r"", 2)
-appRegex = startParentheses + r"(" + parenthesesBlock + r"|" + r"[^\d][^\s]*" + r")" +\
+appRegex = startParentheses + r"(" + parenthesesBlock + r"|" + r"[^\d\s][^\s]*" + r")" +\
            anyWhiteSpaces + anyItem + endParentheses
 seqnRegex = op_regex(r"\bseqn\b", 2)
 setRegex = op_regex(r"\bset\b", 2)
