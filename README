@@ -1,0 +1,22 @@
+Simple interpreter
+Tarea 3 Lenguajes de programacion
+
+Para usar el interprete correr el comando:
+
+    python tarea3.py <s-expr>
+
+donde <s-expr> va encerrado en comillas.
+
+Alternativamente,
+
+    chmod +x tarea3.py
+    ./tarea3.py <s-expr>
+
+
+Para correr los tests:
+
+    python tests.py
+
+Usando PyCharm se puede ver que teniendo en la suite de coverage a los
+archivos simple_interpreter.py y tests.py que el archivo de codigo
+principal (simple_interpreter.py) tiene un 99% de coverage de tests.
