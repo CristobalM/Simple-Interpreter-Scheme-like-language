@@ -529,28 +529,3 @@ def run(s):
     except (ParsingException, NotFoundInEnvException, LocNotFoundException) as err:
         return str(err)
 
-
-"""
-print run("(- 3 (+ 5 (+ 0 1000)))")
-print run("(   if0   1     1     2     )")
-print run("   (with (x 5) (+ x (with (y 3) (+ 10 y))))")
-print run("     (       with (      x   (    fun    (     y    ) (    +     123     y   )   ) )  (  x   1      ))   ")
-print run("(with (x (fun (y) (+ 123 y)))(x 1))")
-print run("     (     with (      x      (fun (x) (+ 123 x))) (x 0))")
-#print run("(with (y 3) (+ x y))")
-print run("(with (x (fun (x) "
-          "(with (y 3) (+ x y) )"
-          "))(x 5))")
-print run("(fun (x) x)")
-
-print run ("( "
-           "( " 
-           "(fun (x) x ) "
-           "(fun (x) (+ x 5)) "
-           ") 3 )")
-
-#print run("(with (x 3) x")
-print run("(with (x 3)(with (f (fun (y) (+ x y)))(with (x 5) (f 4))))")
-#print run("y")
-print run("(with (x 3)(+ (seqn (set x 5) x) x))")
-"""
